@@ -1,46 +1,25 @@
+
 body{
-    background-image: url('/img/bk-img2.png');
+    background-image: url('/img/bk-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-   height: 100vh;
+    background-position-y: -190px;
 
 }
-
-.hero-height{
-    height: 100vh;
+nav{
+    background-color: rgba(64, 64, 64,50%);
+    height: 150px;
+}
+.logo{
+    width:150px;
+    margin-left: 10px;
+    padding-bottom: 30px;
 }
 
-.name-h1{
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.sec-h1{
 
-    background-color: #cce0ff;
-   color:black;
-   font-size: 75px;
-   /* position: relative; */
-   /* top:450px; */
-   border: 5px solid #1a75ff;
-   /* display: inline-block; */
 
-   
-}
-.h1{
-    font-size: 80px;
-    font-family : 'Playfair Display', serif;
-}
-.sec-p{
-    color:#fff;
-    font-size: 25px;
-    padding: 20px;
-    /* position: relative; */
-    /* top: 30px; */
-    /* overflow: visible; */
-}
+
+
 
 
