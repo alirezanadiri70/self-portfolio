@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amiri');
+
 *{
     margin:0px;
     padding: 0px;
@@ -40,6 +41,19 @@ nav{
     font-weight: bold;
     color:#4080bf;
 }
+.a-hover1:hover{
+    color: #b3cce6;
+    transition: 0.2s;
+}
+.a-hover2:hover{
+    color: #ffff00;
+    transition: 0.2s;
+}
+.a-hover3:hover{
+    color:#59b300;
+    transition: 0.2s;
+}
+
 .slide{
     display: none;
     cursor: pointer;
@@ -102,6 +116,35 @@ nav{
 }
 .toggle .line3{
     transform: rotate(+45deg) translate(-5px, -6px);
+}
+section .name .sec-name{
+    color: #4d79ff;
+    font-size: 140px;
+    letter-spacing: 15px;
+    font-family: 'Amiri', serif;
+    
+}
+section .name .sec-name2{
+    color: #fff;
+    font-size: 190px;
+    letter-spacing: 15px;
+    font-family: 'Amiri', serif;
+
+}
+.name{
+    line-height: 105px;
+    margin-left: 20%;
+    margin-top: 13%
+    
+}
+footer{
+    background-color: rgba(64, 64, 64,50%);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    list-style: none;
 }
 
 
