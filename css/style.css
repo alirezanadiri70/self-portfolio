@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amiri');
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 *{
     margin:0px;
     padding: 0px;
@@ -22,9 +22,6 @@ nav{
     font-family: 'Amiri', serif;
     background-color: rgba(64, 64, 64,50%);
     height: 150px;
-}
-.logo{
-    
 }
 .nav-links{
     display: flex;
@@ -131,21 +128,59 @@ section .name .sec-name2{
     font-family: 'Amiri', serif;
 
 }
+.row{
+    display: flex;
+    justify-content: flex-start; 
+    background-color: rgba(191, 191, 191,50%);
+    height: 73vh;
+}
 .name{
     line-height: 105px;
-    margin-left: 20%;
-    margin-top: 13%
-    
+    margin-left: 7%;
+    margin-right:5%;
+    margin-top: 13%;
 }
-footer{
-    background-color: rgba(64, 64, 64,50%);
+.context{
+    background-color:rgba(255, 255, 255,70%);
+    padding: 20px;
+    margin-top: 70px;
+    height: 60vh;
+    margin-right: 70px;
+}
+.con-par{
+    display: block;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    
+    
 }
 .social{
     display: flex;
-    justify-content: center;
-    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
+    font-size: 3.5em;
 }
+.social li a {
+    padding: 1
+}
+.foot-par{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: rgba(64, 64, 64,50%);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
 
 
 
