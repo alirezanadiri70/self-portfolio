@@ -12,7 +12,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -190px;
-
 }
 nav{
     display: flex;
@@ -70,6 +69,7 @@ nav{
 @media screen and (max-width:768px){
     body{
      overflow-x: hidden;
+     background-position-y: -130px;
     }
     .nav-links{
         position:absolute;
@@ -89,6 +89,7 @@ nav{
     }
     .slide{
         display: block;
+        margin-left: 10px;
     }
 }
 .nav-active{
@@ -131,7 +132,7 @@ section .name .sec-name2{
 .row{
     display: flex;
     justify-content: flex-start; 
-    background-color: rgba(191, 191, 191,50%);
+    /* background-color: rgba(191, 191, 191,50%); */
     height: 73vh;
 }
 .name{
@@ -141,11 +142,50 @@ section .name .sec-name2{
     margin-top: 13%;
 }
 .context{
-    background-color:rgba(255, 255, 255,70%);
+    background-color:rgba(51, 51, 51,90%);
+    border-radius: 10px;
+    border-left:1px solid #fff;
     padding: 20px;
     margin-top: 70px;
     height: 60vh;
     margin-right: 70px;
+    overflow: auto;
+    box-shadow: 10px -10px #888888;
+}
+.context:hover{
+    transform: rotate(4deg);
+    transition: 0.6s;
+}
+@media screen and (max-width:750px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .context{
+        margin-right: 0;
+    }
+    .con-par{
+        margin: 0;
+        padding: 0;
+    }
+    .social li a {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:1300px){
+    body{
+        background-position-y: -100px;
+    }
+    .row{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .context{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
 }
 .con-par{
     display: block;
@@ -154,9 +194,6 @@ section .name .sec-name2{
     font-size: 20px;
     text-align: justify;
     font-family: 'Playfair Display', serif;
-    color: #000;
-    
-    
 }
 .social{
     display: flex;
@@ -166,7 +203,7 @@ section .name .sec-name2{
     font-size: 3.5em;
 }
 .social li a {
-    padding: 1
+    padding: 5px;
 }
 .foot-par{
     color:#fff;
@@ -174,11 +211,14 @@ section .name .sec-name2{
     margin-bottom: 10px;
 }
 footer{
-    background-color: rgba(64, 64, 64,50%);
+    background-color: rgba(102,102, 102,50%);
     display: flex;
     flex-direction:column;
     align-items: center;
-
+}
+footer:hover {
+    background-color:rgba(115, 115, 115,50%);
+    transition: 0.3s;
 }
 
 
