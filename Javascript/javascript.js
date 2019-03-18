@@ -1,9 +1,25 @@
-// const button = document.createElement('button');
-// document.body.appendChild(button);
-// button.innerText = "Menu";
-// button.style.backgroundColor = 'rgba(64, 64, 64,50)';
-// var btn_clr = "white";
-// button.style.color = 'white'
-// button.style.fontSize = '30px';
-// button.style.border = 'none';
-// button.style.font = 'serif'
+
+const navSlide = () =>{
+    const slider = document.querySelector('.slide');
+    const nav = document.querySelector('.nav-links');
+    const navLinks =document.querySelectorAll('.nav-links li')
+    
+    slider.addEventListener('click', () => { 
+        //toggle nav
+        nav.classList.toggle('nav-active');
+
+        
+        //animate links
+        navLinks.forEach((link, index) => {
+            if(link.style.animation){
+                link.style.animation = '';
+            }else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+         });
+         //slider animation
+         slider.classList.toggle('toggle');
+    });
+  
+}
+navSlide();
