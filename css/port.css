@@ -1,0 +1,28 @@
+section{
+    width: 100%;
+    height: 73vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,50%),rgba(255,255,255,50%));
+}
+.sec-con{
+    background:linear-gradient(#ff3211,#ff116c);
+    height: 500px;
+    width: 400px;
+}
+.bird{
+    border:2px solid linear-gradient(red,black);
+}
+.sec-pro{
+    width: 600px;
+}
+section .sec-pro p {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    
+}

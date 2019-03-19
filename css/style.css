@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url('/img/bk-img.jpeg');
+    background-image: url('../img/bk-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -200px;
@@ -57,7 +57,7 @@ nav{
 }
 .slide div{
     width:30px;
-    height: 4px;
+    height: 2px;
     background-color: #4080bf;
     margin: 5px;
     transition: all 0.5s ease;
