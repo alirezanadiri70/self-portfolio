@@ -11,7 +11,8 @@ body{
     background-image: url('/img/bk-img.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -190px;
+    background-position-y: -200px;
+    height: 100%;
 }
 nav{
     display: flex;
@@ -35,7 +36,7 @@ nav{
     text-decoration: none;
     letter-spacing: 5px;
     font-weight: bold;
-    color:#4080bf;
+    color:#80bfff;
 }
 .a-hover1:hover{
     color: #b3cce6;
@@ -115,6 +116,7 @@ nav{
 .toggle .line3{
     transform: rotate(+45deg) translate(-5px, -6px);
 }
+/* section starts from here */
 section .name .sec-name{
     color: #4d79ff;
     font-size: 140px;
@@ -129,10 +131,10 @@ section .name .sec-name2{
     font-family: 'Amiri', serif;
 
 }
+
 .row{
     display: flex;
     justify-content: flex-start; 
-    /* background-color: rgba(191, 191, 191,50%); */
     height: 73vh;
 }
 .name{
@@ -202,22 +204,32 @@ section .name .sec-name2{
     list-style: none;
     font-size: 3.5em;
 }
-.social li a {
-    padding: 5px;
-}
-.foot-par{
-    color:#fff;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+
+
+/* Footer starts from here */
 footer{
     background-color: rgba(102,102, 102,50%);
     display: flex;
     flex-direction:column;
     align-items: center;
+    height: 100px;
 }
 footer:hover {
     background-color:rgba(115, 115, 115,50%);
+    transition: 0.3s;
+}
+.foot-par{
+    display: block;
+    color:#fff;
+    font-size: 20px;
+    position: relative;
+    top:-20px;
+}
+.social li a {
+    padding: 5px;
+}
+.social li a:hover{
+    color: #66b3ff;
     transition: 0.3s;
 }
 
