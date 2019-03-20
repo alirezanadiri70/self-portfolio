@@ -12,17 +12,31 @@ section{
     background:linear-gradient(#ff3211,#ff116c);
     height: 500px;
     width: 400px;
+    display: grid;
+    place-items: center;
 }
-.bird{
-    border:2px solid linear-gradient(red,black);
+.sec-con .list{
+    /* display: ;
+    place-items: center;
+    margin: 0; */
+
 }
-.sec-pro{
+.list{
+    background: #000000;
+    width: 394px;
+    height: 494px;
+    padding-left: -1px;
+}
+.sec-con .list .sec-p{
+    color: red;
+    font-size: 30px;
+}
+.sec-par{
     width: 600px;
 }
-section .sec-pro p {
+section .sec-par p {
     color: white;
     font-size: 20px;
     text-align: justify;
     line-height: 35px;
-    
 }
