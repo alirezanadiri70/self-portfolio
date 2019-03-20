@@ -9,7 +9,6 @@
 
 body{
     background-image: url('../img/bk-img.jpeg');
-    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -200px;
     height: 100%;
