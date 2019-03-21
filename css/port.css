@@ -101,13 +101,26 @@ section{
     border : 2px solid #fff;
     padding: 3px;
 }
-.sec-bk{
-    background: linear-gradient(rgba(255,255,255,40%),rgba(0,0,0,50%));
-    opacity: 1;
-    border: 2px solid #ffff33;
-}
 .col-row{
     width: 100%;
     height: 400px;
-    /* background: linear-gradient(rgba(255,255,255,40%),rgba(0,0,0,50%)); */
+    background: linear-gradient(rgba(255,255,255,40%),rgba(0,0,0,50%));
+    opacity: 1;
+    border: 2px solid #ffff33;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.btn-can{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+}
+.des-1,.des-2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+.des-2{
+    width: 600px;
 }
