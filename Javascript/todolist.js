@@ -8,18 +8,18 @@ button.addEventListener('click', addToList);
 function addToList(){
     const li = document.createElement('li');
     ul.appendChild(li);
-    if (li.length === 10){
-        li.innerHTML = '';
-        console.log(li.length)
-    }
+    // if (ul.childNodes.length === 11){
+    //     ul.innerHTML = '';
+    // }
     li.innerText = listInput.value;
     listInput.value ='';
     li.style.color ='white';
 }
-// resetButton.addEventListener('click', clearList);
-// function clearList(){
-//     // window.confirm("Are you sure?");
-//     if (li.length === 1){
-//        console.log(li)
-//     }
+resetButton.addEventListener('click', clearList);
+function clearList(){
+    // window.confirm("Are you sure?");
+    if (ul.childNodes.length === 5){
+        ul.innerHTML = '';
+    }
+}
         
