@@ -110,6 +110,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
 
 }
 .btn-can{
@@ -117,10 +118,11 @@ section{
     width: 300px;
     height: 200px;
 }
+.btn-dex{
+    width:600px;
+}
 .des-1,.des-2 {
     color: #fff;
     font-family: 'Playfair Display', serif;
-}
-.des-2{
     width: 600px;
 }
