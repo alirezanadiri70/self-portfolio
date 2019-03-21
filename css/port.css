@@ -120,13 +120,22 @@ section{
 .btn-cl{
     width: 370px;
     height: 300px;
-    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
-
+.color-button{
+    font-family: 'Playfair Display', serif;
+    width: 180px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 20px;
+}
 .btn-des{
     width:650px;
     height: 250px;
-    
     border-radius: 10px;
     background-color: rgba(38, 38, 38,80%);
     border-left:1px solid #fff;
