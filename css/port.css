@@ -43,12 +43,16 @@ header{
 .btn{
     margin-top: 5px;
 }
+.re-btn:hover{
+    background-color:red;
+    color: #fff;
+}
 /*divider line*/
 .div-line{
     background-color: #80bfff;
     width: 300px;
     height: 1px;
-    margin-top: 8px; 
+    margin-top: 20px; 
 }
 /*decription*/
 .hd-par{
@@ -113,16 +117,32 @@ section{
     align-items: center;
 
 }
-.btn-can{
-    background-color: white;
-    width: 300px;
-    height: 200px;
+.btn-cl{
+    width: 370px;
+    height: 300px;
+    background-color: #fff;
 }
-.btn-dex{
-    width:600px;
+
+.btn-des{
+    width:650px;
+    height: 250px;
+    
+    border-radius: 10px;
+    background-color: rgba(38, 38, 38,80%);
+    border-left:1px solid #fff;
+    padding: 10px;
+    
+}
+.des-1{
+    font-size: 40px;
+    color:#ffff00;
+}
+.des-2{
+    color:#fff;
 }
 .des-1,.des-2 {
-    color: #fff;
     font-family: 'Playfair Display', serif;
-    width: 600px;
+    width: 660px;
+    font-size: 25px;
+    line-height: 35px;
 }
