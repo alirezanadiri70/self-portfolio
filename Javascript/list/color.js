@@ -1,8 +1,8 @@
 const listInput = document.querySelector('.input');
 const button = document.querySelector('.btn');
 const ul = document.querySelector('.ul-list');
-const resetButton = document.querySelector('.re-btn');
-// const li = document.querySelector('.demo')
+// const resetButton = document.querySelector('.re-btn');
+
 button.addEventListener('click', addToList);
 
 function addToList(){
@@ -22,5 +22,21 @@ function addToList(){
 //         ul.innerHTML = '';
 //     }
 // }
+//////////////* color button*///////////////
 
-        
+const colors = ['red','green','blue','orange','yellow'];
+let currentColor = 0;
+
+const colorButton = document.querySelector('.color-button')[0];
+
+colorButton.addEventListener('click',changeColor );
+function changeColor(){
+    setTimeout( ()=>{
+        colorButton.style.backgroundColor = colors[currentColor];
+        currentColor++;
+        if (currentColor >= colors.length){
+            currentColor = 0;
+        }
+    },1000);
+}
+
