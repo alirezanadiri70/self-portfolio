@@ -27,7 +27,7 @@ function addToList(){
 const colors = ['red','green','blue','orange','yellow'];
 let currentColor = 0;
 
-const colorButton = document.querySelector('.color-button')[0];
+const colorButton = document.querySelector('.color-button');
 
 colorButton.addEventListener('click',changeColor );
 function changeColor(){
@@ -37,6 +37,6 @@ function changeColor(){
         if (currentColor >= colors.length){
             currentColor = 0;
         }
-    },1000);
+    },10);
 }
 

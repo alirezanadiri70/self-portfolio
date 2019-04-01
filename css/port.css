@@ -155,3 +155,14 @@ section{
     font-size: 25px;
     line-height: 35px;
 }
+@media screen and (max-width:860px){
+   .col-row{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+   .btn-des{
+       widows: 550px;
+       overflow: auto;
+   }
+}

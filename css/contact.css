@@ -1,0 +1,54 @@
+/* #contact{
+    min-height: 100px;
+    background-color:gray;
+}
+.row{
+    height: 20px;
+}
+.contact_form{
+    background-color: #ff6633;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.contact_form form{
+    padding: 20px;
+
+}
+.contact_form span{
+    color: #ff0d06;
+}
+#contact{
+    background-color: #f8512f;
+}
+#contact h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 4em;
+}
+#contact p{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1em;
+}
+#contact_fine_print{
+    font-size: 12px !important;
+    text-align: center;
+    margin-top: 5px;
+}
+address{
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    position: absolute;
+}
+.contact_bottom{
+    margin-top: 50px;
+    margin-bottom: 25px;
+} */
+.contact-map{
+    background-color: gray;
+    min-height: 400px;
+    padding-top: 10px;
+}
