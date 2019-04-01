@@ -1,19 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amiri');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 *{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 body{
     background-image: url('../img/bk-img.jpeg');
     background-size: cover;
-    /* background-position-y: -200px; */
     background-position: center;
     background-attachment: fixed;
     height: 100%;
+    min-width: 575px;;
 }
 nav{
     display: flex;
@@ -24,10 +26,6 @@ nav{
     background-color: rgba(64, 64, 64,50%);
     height: 150px;
 }
-.logo{
-   margin: 0 auto;
-   padding: 0 auto;
-}∏
 .nav-links{
     display: flex;
     justify-content: space-around;
@@ -67,44 +65,14 @@ nav{
     margin: 5px;
     transition: all 0.5s ease;
 }
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%
-    }
-}
-@media screen and (max-width:768px){
-    body{
-     overflow-x: hidden;
-     background-position-y: -130px;
-    }
-    .nav-links{
-        position:absolute;
-        right: 0px;
-        height: 92vh;
-        top: 13vh;
-        background-color: rgba(64, 64, 64,90%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    .slide{
-        display: block;
-        margin-left: 10px;
-    }
-}
+
 .nav-active{
     transform: translateX(0%);
 }
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform:translateX(50px);
+        transform:translateX(40px);
     }
     to{
         opacity: 1;
@@ -122,14 +90,14 @@ nav{
     transform: rotate(+45deg) translate(-5px, -6px);
 }
 /* section starts from here */
-section .name .sec-name{
+.sec-name{
     color: #4d79ff;
     font-size: 140px;
     letter-spacing: 15px;
     font-family: 'Amiri', serif;
     
 }
-section .name .sec-name2{
+.sec-name2{
     color: #fff;
     font-size: 190px;
     letter-spacing: 15px;
@@ -159,12 +127,6 @@ section .name .sec-name2{
     overflow: auto;
     box-shadow: 10px -10px #888888;
 }
-.context:hover{
-    transform: rotate(4deg);
-    transition: 0.6s;
-}
-
-
 .con-par{
     display: block;
     color: #fff;
@@ -200,6 +162,7 @@ footer:hover {
     font-size: 20px;
     position: relative;
     top:-20px;
+    font-family: 'Merriweather', serif;
 }
 .social li a {
     padding: 5px;
@@ -207,6 +170,37 @@ footer:hover {
 .social li a:hover{
     color: #66b3ff;
     transition: 0.3s;
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%
+    }
+}
+@media screen and (max-width:765px){
+    body{
+     overflow-x: hidden;
+     background-position-y: -130px;
+    }
+    .nav-links{
+        position:absolute;
+        right: 0px;
+        height: 92vh;
+        top: 13vh;
+        background-color: rgba(64, 64, 64,90%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .slide{
+        display: block;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width:750px){
     .row{
@@ -225,11 +219,17 @@ footer:hover {
         padding: 10px;
     }
 }
+@media screen and (max-width:575px){
+    .sec-name{
+        font-size: 100;
+    }
+    .sec-name2{
+        font-size: 150;
+    }
+}
 
 @media screen and (max-width:1300px){
-    body{
-        background-position-y: -100px;
-    }
+   
     .row{
         display:flex;
         flex-direction: column;
