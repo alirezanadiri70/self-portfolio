@@ -1,54 +1,40 @@
-/* #contact{
-    min-height: 100px;
-    background-color:gray;
-}
-.row{
-    height: 20px;
-}
-.contact_form{
-    background-color: #ff6633;
-    color: #fff;
-    border: 1px solid #fff;
-}
-.contact_form form{
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
 
-}
-.contact_form span{
-    color: #ff0d06;
-}
-#contact{
-    background-color: #f8512f;
-}
-#contact h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 4em;
-}
-#contact p{
-    font-family: 'Raleway',sans-serif;
-    font-weight: 300;
-    color: #fff;
-    font-size: 1em;
-}
-#contact_fine_print{
-    font-size: 12px !important;
-    text-align: center;
-    margin-top: 5px;
-}
-address{
-    color: #fff;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 300;
-    position: absolute;
-}
-.contact_bottom{
-    margin-top: 50px;
-    margin-bottom: 25px;
-} */
+
 .contact-map{
-    background-color: gray;
+    background-color: rgba(77,184,255,0.8);
     min-height: 400px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+}
+.contact{
+    border:1px solid #fff;
+    padding: 10px;
+}
+.contact h1, p, label{
+    color:#fff;
+}
+.contact h1{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #ffff4d
+}
+.message{
+    width: 400px;
+}
+.contact form span{
+    color: #ff0000;
+}
+button{
+    border-radius: 3px;
+    padding: 5px;
+}
+.goo-map{
+    width: 500px;
+    height: 350px;
+}
+.map p {
+    background-color:#007acc
 }
