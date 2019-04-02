@@ -11,7 +11,7 @@ header{
 }
 .hd-con{
     background:linear-gradient(#80bfff,#ffff00);
-    height: 500px;
+    height: 300px;
     width: 400px;
     display: grid;
     place-items: center;
@@ -26,7 +26,7 @@ header{
 .list{
     background:#262626;
     width: 394px;
-    height: 494px;
+    height: 290px;
     padding-left: -1px;
     display: flex;
     border-radius: 10px;
