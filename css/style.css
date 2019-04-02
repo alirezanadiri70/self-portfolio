@@ -194,8 +194,8 @@ footer:hover {
     body{
      overflow-x: hidden;
      background-position-y: -130px;
-    }
-    .nav-links{
+    } 
+     .nav-links{
         position:absolute;
         right: 0px;
         height: 92vh;
