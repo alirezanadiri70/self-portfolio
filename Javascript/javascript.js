@@ -2,7 +2,7 @@
 const navSlide = () =>{
     const slider = document.querySelector('.slide');
     const nav = document.querySelector('.nav-links');
-    const navLinks =document.querySelectorAll('.nav-links li')
+    const navLinks =document.querySelectorAll('.nav-links li');
     
     slider.addEventListener('click', () => { 
         //toggle nav
@@ -23,3 +23,5 @@ const navSlide = () =>{
   
 }
 navSlide();
+
+

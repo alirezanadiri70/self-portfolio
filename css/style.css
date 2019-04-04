@@ -16,7 +16,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100%;
+    height: 100vh;
     min-width: 575px;;
 }
 nav{
@@ -68,13 +68,11 @@ nav{
     transition: all 0.5s ease;
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform:translateX(40px);
+        transform:translateX(50px);
     }
     to{
         opacity: 1;
@@ -94,60 +92,54 @@ nav{
 /* section starts from here */
 
 .row{
+    border: 2px solid #fff;
+    background-image: url('../img/Ash-back.gif');
+    background-size: cover;
     display: flex;
-    justify-content: flex-start; 
-    height: 73vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
 }
+
 .name{
     line-height: 105px;
     margin-bottom: 0;
     margin-left: 7%;
-    margin-right:5%;
-    margin-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    left: 200px;
+    top: 20px;
 }
 .sec-name{
     color: #4d79ff;
-    font-size: 100px;
-    letter-spacing: 15px;
+    font-size: 40px;
+    letter-spacing: 10px;
     font-family: 'Amiri', serif;
     letter-spacing: 1px;
     
-}
-.sec-name2{
-    color: #fff;
-    font-size: 150px;
-    letter-spacing: 15px;
-    font-family: 'Amiri', serif;
-    letter-spacing:1px; 
 }
 .sec-name3{
     color: #ffff00;
     font-family: 'Bangers', cursive;
     font-size: 30px;
+    z-index: 0;
     position: relative;
-    top:-20px;
+    top: -70px;
 }
 .context{
-    background-color:rgba(51, 51, 51,90%);
-    border-radius: 10px;
-    border-left:1px solid #fff;
-    padding: 20px;
-    margin-top: 70px;
-    height: 60vh;
-    margin-right: 70px;
-    overflow: auto;
-    box-shadow: 10px -10px #888888;
+    position: relative;
+    left: 150px;
 }
 .con-par{
     display: block;
     color: #fff;
     line-height: 50px;
-    font-size: 20px;
-    text-align: justify;
+    font-size: 15px;
+    width: 300px;
     font-family: 'Playfair Display', serif;
+    text-align: justify;
 }
 .social{
     display: flex;
@@ -170,20 +162,21 @@ footer:hover {
     background-color:rgba(115, 115, 115,50%);
     transition: 0.3s;
 }
-.foot-par{
-    display: block;
-    color:#fff;
-    font-size: 20px;
-    position: relative;
-    top:-20px;
-    font-family: 'Merriweather', serif;
-}
+
 .social li a {
     padding: 5px;
 }
 .social li a:hover{
     color: #66b3ff;
     transition: 0.3s;
+}
+.foot-par{
+    display: inline-block;
+    color:#fff;
+    font-size: 20px;
+    position: relative;
+    top:-20px;
+    font-family: 'Merriweather', serif;
 }
 @media screen and (max-width:1024px){
     .nav-links{
@@ -193,17 +186,19 @@ footer:hover {
 @media screen and (max-width:765px){
     body{
      overflow-x: hidden;
-     background-position-y: -130px;
     } 
-     .nav-links{
+    .nav-links{
+        z-index: 1;
+        color: white;
+        background-position-y: -130px;
         position:absolute;
         right: 0px;
-        height: 92vh;
+        height: 96vh;
         top: 13vh;
-        background-color: rgba(64, 64, 64,90%);
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: space-around;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -211,28 +206,46 @@ footer:hover {
     .nav-links li {
         opacity: 0;
     }
+    .a-hover1,.a-hover2,.a-hover3{
+        color: #80bfff;
+    }
     .slide{
         display: block;
         margin-left: 10px;
     }
 }
-@media screen and (max-width:750px){
-    .row{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    .context{
-        margin-right: 0;
+@media screen and (max-width:1299px){
+    .name{
+        position: relative;
+        left: 100px;
     }
     .con-par{
-        margin: 0;
-        padding: 0;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:756px){
+    .name,.context{
+      position: relative;
+      left: -50px;
+    }
+    .sec-name{
+        background-color:rgba(204, 230, 255,50%);
+        height: 80px;
+        box-shadow:0px -20px 50px 15px black; 
+    }
+    .sec-name3{
+        position: relative;
+        top: -28px;
+    }
+    .con-par{
+      line-height: 25px;
+      
     }
     .social li a {
         padding: 10px;
     }
 }
+
 
 @media screen and (max-width:1300px){
    
@@ -245,6 +258,10 @@ footer:hover {
         margin-right: 30px;
         margin-left: 30px;
     }
+}
+.nav-active{
+    transform: translateX(0%); 
+    background-color: rgba(64, 64, 64,90%);
 }
 
 
